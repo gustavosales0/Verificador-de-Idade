@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/introducao-javascript/assets/exerciciosguanabara/css/pagina.css">
+  <tittle>Exercício de fixação</tittle>
+</head>
+
+<body onload="carregar()">
+  <header>
+    <h1>Hora do dia</h1>
+  </header>
+  <section>
+    <div id="msg">Aqui vai aparecer a mensagem...</div>
+  </section>
+  <footer>
+    <p>&copy; CursoemVídeo</p>
+  </footer>
+  <script>
+    function carregar(){
+    let msg = window.document.getElementById('msg');
+    let data = new Date();
+    let hora = data.getHours();
+    msg.innerHTML = `Agora são ${hora} horas.`;
+    if (hora >= 0 && hora < 12){
+
+alert("Bom dia!")
+    }else if (hora >= 12 && hora < 18){
+
+alert ("Boa tarde!")
+    }else{
+
+alert ("Boa noite!")
+    };
+    };
+
+  </script>
+</body>
+
+</html>

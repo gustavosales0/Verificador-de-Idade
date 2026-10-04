@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gustavo Sales">
+    <meta name="keywords" content="página, Html, programação">
+    <link rel="stylesheet" href="/introducao-javascript/assets/exerciciosguanabara/css/exo5dom.css">
+    <meta name="description" content="Página de desenvolvimento html">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="generator" content="Visual Studio Code">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passos DOM</title>
+</head>
+<body>
+<h1>Iniciando estudos com DOM</h1> 
+<p>Aqui vai o resultado</p> <!--0-->
+<div id = 'msg'>Clique em mim</div> 
+<p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p> <!--1-->
+<script> 
+let p1 = document.getElementsByTagName('p')[1]
+/*
+// pega o que texto da tag, ou o HTML inteiro (TAGS) alert(p1.innerText)
+let d = document.getElementById('msg')
+d.innerText = 'Estou aguardando...'
+*/
+/*
+let d = document.getElementById('msg')
+d.innerText = 'Shingeki no Kyojin'
+*/
+let d = document.querySelector('#msg')
+d.innerText = 'Shinkegi no Kyojin.'
+</script>
+</body>
+</html>
